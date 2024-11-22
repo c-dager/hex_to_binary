@@ -52,7 +52,13 @@ void print_binary(char hexDigit){
         return;
     }
     else{
-        printf("COMPLETE HEX TO BINARY FUNCTION");
+        printf("Binary equivalent to %c: ", hexDigit);
+        //iterates from most to least significant bit
+        for (int i = 3; i >= 0; i--) {
+            //create binary number with 1 at position i, 0's elsewhere (shifts 1 to the left)
+            int mask = 1 << i;
+            printf("%d", (num & mask) > 0);
+    }
     }
     printf("\n\n");
 }
