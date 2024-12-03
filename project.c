@@ -70,12 +70,12 @@ int main(){
         scanf(" %c", &hexDigit);
 
         //stops if input is equal to X
-        if(hexDigit == 88){
+        if(hexDigit == 'X'){
             break;
         }
 
         print_binary(hexDigit);
     }
-    printf("Goodbye!\n");
+    printf("Goodbye.\n");
     return 0;
 }
